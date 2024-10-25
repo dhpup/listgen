@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: listgen-apps
+spec:
+  project: listgen
+  syncPolicy:
+    automated: {}
+  source:
+    repoURL: https://github.com/dhpup/listgen.git
+    targetRevision: main
+    path: apps
+    directory:
+      recurse: true
+  destination:
+    name: in-cluster
+    namespace: argocd

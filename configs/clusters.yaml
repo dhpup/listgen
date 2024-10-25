@@ -1,0 +1,6 @@
+cluster:
+  list:
+   - name: mac1
+     namespace: lg-ns1
+   - name: mac2
+     namespace: lg-ns2
