@@ -13,7 +13,7 @@ spec:
           repoURL: https://github.com/dhpup/listgen.git
           revision: main
           files:
-          - path: src/listgen/configs/clusters.yaml
+          - path: "configs/clusters.yaml"
       - list:
           elementsYaml: "{{ .cluster.list | toJson }}"
   template:
